@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+      }
+      .fieldset {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        border-color: #000;
+      }
+      table {
+        width: 100%;
+      }
+
+      /* Table Atas */
+      .satu {
+        margin-bottom: 20px;
+      }
+      .table-kiri {
+        width: 30%;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      .table-kiri img {
+        width: 300px;
+      }
+      .table-tengah {
+        width: 40%;
+        padding: 20px;
+      }
+      .table-kanan {
+        width: 30%;
+        padding: 20px;
+        text-align: end;
+      }
+      /* ^ Akhir Table Atas ^ */
+
+      iframe {
+        width: 328px;
+        height: 328px;
+      }
+      video {
+        width: 300px;
+      }
+
+      /* Table Bawah */
+      .dua p {
+        text-align: justify;
+      }
+      .setengah {
+        width: 33.3%;
+        padding: 20px;
+      }
+      .setengah fieldset {
+        border-color: #000;
+        width: 300px;
+        height: 300px;
+      }
+      /* Akhir Table Bawah */
+    </style>
+
+    <title>Profil MDR</title>
+  </head>
+  <body>
+    <fieldset class="fieldset">
+      <legend>Directory Profile Page</legend>
+
+      <!-- Table Atas -->
+      <table class="satu" border="1">
+        <tr>
+          <td class="table-kiri">
+            <img src="img/photo.jpg" alt="" />
+          </td>
+          <td class="table-tengah">
+            <h2>Profil Muhammad Dihya Ramdhan</h2>
+            <p>Bukit Cengkeh Berbunga</p>
+            <p>Jl. Mawar</p>
+            <p>RT 07 RW 24</p>
+            <p>Email: <a href="mailto:dihyar25@gmail.com">dihyar25@gmail.com</a></p>
+            <p>Telephone: <a href="tel:3216541234">+62 878 1110 6054</a></p>
+          </td>
+          <td class="table-kanan">
+            <u>Categories</u>
+            <p>Lorem ipsum</p>
+            <p>dolor sit</p>
+            <p>amet</p>
+            <p>dolor sit</p>
+          </td>
+        </tr>
+      </table>
+      <!-- ^ Akhir Table Atas ^ -->
+
+      <!-- Table Bawah -->
+      <table class="dua" border="1">
+        <tr>
+          <td class="table-kiri" colspan="3">
+            <p>
+              Saya Muhammad Dihya Ramdhan, lulusan SMK Al Muhajirin jurusan Teknik Komputer dan Jaringan (TKJ) dari SMK, saya berpengalaman dan mampu membangun jaringan LAN, WAN hingga instalasi jaringan lainnya. Saat ini, memiliki
+              ketertarikan untuk belajar teknologi informasi.
+            </p>
+            <p>Saya suka mencari kesempatan belajar dan saya tidak takut gagal dan sebagai bagian dari pembelajaran. Saya merasa industri teknologi adalah tempat terbaik untuk melakukan hal tersebut.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="setengah">
+            <video controls>
+              <source src="video/VID-20220211-WA0070.mp4" type="video/mp4" />
+            </video>
+          </td>
+          <td class="setengah">
+            <iframe src="pages/iframe.html" frameborder="0"></iframe>
+          </td>
+          <td class="setengah">
+            <fieldset>
+              <legend>Attachments</legend>
+              <ul>
+                <li>
+                  <a href="img/img1.jpg" download>Download image 1</a>
+                </li>
+                <li>
+                  <a href="img/img2.jpg" download>Download image 2</a>
+                </li>
+                <li>
+                  <a href="img/img3.jpg" download>Download image 3</a>
+                </li>
+                <li>
+                  <a href="img/img4.jpg" download>Download image 4</a>
+                </li>
+              </ul>
+            </fieldset>
+          </td>
+        </tr>
+      </table>
+      <!-- ^ Akhir Table Bawah  ^ -->
+    </fieldset>
+  </body>
+</html>
