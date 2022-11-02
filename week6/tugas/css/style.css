@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Style untuk halaman Table */
+.table {
+  color: red;
+}
+.table table {
+  border-collapse: collapse;
+  border: 1px solid #5a9bd5;
+  text-align: left;
+  background-color: #fff;
+  color: #000;
+}
+.table th {
+  color: #fff;
+}
+.bg-biru {
+  background-color: #5a9bd5;
+}
+.bg-birmud {
+  background-color: #deeaf6;
+}
+.text-bold {
+  font-weight: bold;
+}
+/* Akhir Style halaman Table */
+
+/* Style untuk halaman text polos & halaman text edit*/
+.row {
+  display: flex;
+  justify-content: center;
+}
+.col {
+  background-color: #5a9bd5;
+  color: #fff;
+  border-radius: 30px;
+  padding: 30px;
+}
+.fs-1 {
+  font-size: 20px;
+}
+.fs-2 {
+  font-size: 17px;
+}
+/* Akhir Style halaman text polos & halaman text edit*/

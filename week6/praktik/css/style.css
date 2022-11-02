@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f5f5dd;
+  font-family: 'Poppins', sans-serif;
+}
+
+#header {
+  background-color: #deb887;
+  padding: 5px 0;
+  text-align: center;
+}
+#header h1 {
+  color: #00f;
+}
+#header blockquote {
+  width: 75%;
+  background-color: #fed700;
+  border: 1px dotted #000;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu {
+  text-align: center;
+}
+.menu li {
+  display: inline;
+  margin: 0 8px;
+}
+
+.gambar {
+  text-align: center;
+  display: block;
+}
+.gambar img {
+  width: 15%;
+}
+
+.fp::first-letter {
+  font-size: 36px;
+  color: #00f;
+}
+
+.koleksi {
+  text-align: center;
+}
+.koleksi img {
+  width: 24%;
+  padding: 0 5px;
+}
+
+.promo {
+  text-align: center;
+}
+
+.promo h3 {
+  width: 30%;
+  background-color: #deb887;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+.promo strong {
+  color: #00f;
+}
+.promo ol {
+  padding: 0;
+}
+.promo li {
+  display: inline;
+  padding: 0 8px;
+}
