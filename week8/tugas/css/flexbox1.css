@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin: 0;
+  padding: 1em;
+}
+
+.flex {
+  display: flex;
+}
+.container {
+  display: flex;
+}
+.nav {
+  background-color: #ffc0cb;
+  width: 20vw;
+  height: 100vh;
+}
+.aside {
+  background-color: #01ffff;
+  width: 20vw;
+}
+
+.article {
+  width: 60vw;
+  height: 60vh;
+}
+.header,
+.footer {
+  height: 20vh;
+  background-color: #f0e78c;
+}

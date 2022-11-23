@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: aquamarine;
+  padding: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
