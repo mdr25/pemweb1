@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hitung Biaya Parkir</title>
+  </head>
+  <body>
+    <table border="1" align="center" cellpadding="10">
+      <tr>
+        <td>Jam Masuk</td>
+        <td>Jam Keluar</td>
+        <td>Lama</td>
+        <td>Keluaran Biaya</td>
+      </tr>
+      <tr>
+        <td>
+          <input type="number" id="masuk" onkeyup="hitung()" />
+        </td>
+        <td>
+          <input type="number" id="keluar" onkeyup="hitung()" />
+        </td>
+        <td>
+          <input type="text" id="lama" readonly />
+        </td>
+        <td><input type="text" id="biaya" readonly /></td>
+      </tr>
+    </table>
+
+    <script>
+      function hitung() {
+        let masuk = Number(document.getElementById('masuk').value);
+        let keluar = Number(document.getElementById('keluar').value);
+        let lama = keluar - masuk;
+        document.getElementById('lama').value = lama + ' Jam';
+        if (lama <= 2) {
+          document.getElementById('biaya').value = 3000;
+        } else {
+          document.getElementById('biaya').value = 4000 + (lama - 3) * 1000;
+        }
+      }
+    </script>
+  </body>
+</html>

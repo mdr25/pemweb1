@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luas dan Keliling Lingkaran</title>
+    <script></script>
+  </head>
+  <body>
+    <span id="pi">tes1</span>
+    <br />
+    <span id="jari">tes2</span>
+    <br />
+    <span id="luas">tes3</span>
+    <br />
+    <span id="keliling">tes4</span>
+
+    <script>
+      // Buat Variable Phi
+      const phi = 3.14;
+      console.log('Nilai Phi adalah ' + phi);
+      // Buat Variable Jari-jari
+      let jari = 14;
+      console.log('Nilai Jari-jari adalah ' + jari);
+      // Buat rumus luas lingkaran (Nilai phi dikali dengan Jari2kuadrat)
+      let luas = phi * (jari * jari);
+      console.log('Nilai Luas Lingkaran adalah ' + luas);
+      // Buat rumus Keliling Lingkaran
+      let keliling = phi * (2 * jari);
+      console.log('Nilai Keliling Lingkaran adalah ' + keliling);
+
+      // Catch element berdasarkan id nya lalu tampilkan kontennya di browser
+      document.getElementById('pi').innerHTML = 'Phi = ' + phi;
+      document.getElementById('jari').innerHTML = 'Jari-jari = ' + jari;
+      document.getElementById('luas').innerHTML = 'Luas Lingkaran = ' + luas;
+      document.getElementById('keliling').innerHTML = 'Keliling Lingkaran = ' + keliling;
+    </script>
+  </body>
+</html>
