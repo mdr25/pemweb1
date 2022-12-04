@@ -16,10 +16,10 @@
       </tr>
       <tr>
         <td>
-          <input type="number" id="masuk" onkeyup="hitung()" />
+          <input type="number" id="masuk" onchange="hitung()" />
         </td>
         <td>
-          <input type="number" id="keluar" onkeyup="hitung()" />
+          <input type="number" id="keluar" onchange="hitung()" />
         </td>
         <td>
           <input type="text" id="lama" readonly />
@@ -30,8 +30,8 @@
 
     <script>
       function hitung() {
-        let masuk = Number(document.getElementById('masuk').value);
-        let keluar = Number(document.getElementById('keluar').value);
+        let masuk = document.getElementById('masuk').value;
+        let keluar = document.getElementById('keluar').value;
         let lama = keluar - masuk;
         document.getElementById('lama').value = lama + ' Jam';
         if (lama <= 2) {
