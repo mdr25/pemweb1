@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Form Validation</legend>
+      <form method="dialog">
+        <span>Nama Pelanggan:</span>
+        <br />
+        <input type="text" name="nama" placeholder="Masukkan Nama" id="nama" />
+
+        <br />
+        <br />
+
+        <span>Email:</span>
+        <br />
+        <input type="email" name="email" placeholder="Masukkan Email" id="email" />
+
+        <br />
+        <br />
+
+        <span>Jam Keberangkatan:</span>
+        <br />
+        <input type="time" name="jam" id="jam" />
+
+        <br />
+        <br />
+
+        <span>Tujuan Keberangkatan:</span>
+        <br />
+        <input type="text" name="tujuan" placeholder="Masukkan Tempat Tujuan" id="tujuan" />
+
+        <br />
+        <br />
+
+        <span>Jumlah Tiket:</span>
+        <br />
+        <input type="number" name="tiket" placeholder="Masukkan Jumlah Tiket" id="tiket" />
+
+        <br />
+        <br />
+
+        <button id="cetak">Cetak</button>
+
+        <h4 style="margin: 15px 0 0 0" id="hasil"></h4>
+      </form>
+    </fieldset>
+
+    <script>
+      const nama = document.getElementById('nama');
+      const email = document.getElementById('email');
+      const jam = document.getElementById('jam');
+      const tujuan = document.getElementById('tujuan');
+      const tiket = document.getElementById('tiket');
+      const cetak = document.getElementById('cetak');
+      const hasil = document.getElementById('hasil');
+
+      cetak.addEventListener('click', function () {
+        if (nama.value == '') {
+          alert('Nama tidak boleh kosong');
+          return false;
+        } else if (nama.value.length > 30) {
+          alert('Nama tidak boleh lebih dari 30 karakter');
+          return false;
+        } else if (email.value == '') {
+          alert('Email tidak boleh kosong');
+          return false;
+        } else if (jam.value == '') {
+          alert('Jam tidak boleh kosong');
+          return false;
+        } else if (tujuan.value == '') {
+          alert('Masukkan lokasi tujuan terlebih dahulu');
+          return false;
+        } else if (tiket.value == '') {
+          alert('Masukkan jumlah tiket terlebih dahulu');
+          return false;
+        } else if (tiket.value > 10) {
+          alert('Jumlah tiket maksimal 10');
+          return false;
+        } else {
+        }
+
+        hasil.innerHTML = 'Nama : ' + nama.value + '<br />' + 'Email : ' + email.value + '<br />' + 'Jam Berangkat : ' + jam.value + '<br />' + 'Tujuan : ' + tujuan.value + '<br />' + 'Jumlah Tiket : ' + tiket.value;
+        nama.value = '';
+        email.value = '';
+        jam.value = '';
+        tujuan.value = '';
+        tiket.value = '';
+      });
+    </script>
+
+    <!--Nama Pelanggan : (required validation, maksimum 30 karakter)
+      • Email: (required validation, email format)
+      • Jam Keberangkatan : (required validation, jam dengan format jam antara 00.00 – 23.59)
+      • Tujuan Keberangkatan : (required validation)
+      • Jumlah Tiket : (required validation, bilangan bulat antara 1 – 10 )-->
+  </body>
+</html>

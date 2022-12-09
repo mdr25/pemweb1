@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image</title>
+  </head>
+  <body>
+    <center>
+      <select name="listimg" id="listimg" class="list" onchange="imglist()">
+        <option value="">Pilih Gambar</option>
+        <option value="https://images.unsplash.com/photo-1570250363652-0d8340128223?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=582&q=80">Harimau</option>
+        <option value="https://images.unsplash.com/photo-1504662086540-c3a76649a133?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=562&q=80">Singa</option>
+        <option value="https://images.unsplash.com/photo-1620672971502-856d3b73db0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80">Cheetah</option>
+      </select>
+      <br />
+      <br />
+      <img src="" alt="" width="500" id="gambar" />
+    </center>
+
+    <script>
+      function imglist() {
+        let gambar = document.getElementById('listimg').value;
+        document.getElementById('gambar').src = gambar;
+      }
+    </script>
+  </body>
+</html>

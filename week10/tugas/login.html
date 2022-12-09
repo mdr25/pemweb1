@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style></style>
+
+    <title>Login Page</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Login</legend>
+      <form method="get">
+        <span>Username:</span>
+        <br />
+        <input type="text" placeholder="Masukkan Username" name="username" id="username" class="username" />
+
+        <br />
+        <br />
+
+        <span>Password:</span>
+        <br />
+        <input type="password" placeholder="Masukkan Password" name="password" id="password" class="password" />
+
+        <br />
+        <br />
+
+        <button onclick="return login()" type="submit">Login</button>
+      </form>
+    </fieldset>
+
+    <script>
+      function login() {
+        username = document.getElementById('username').value;
+        password = document.getElementById('password').value;
+
+        if (username == 'admin' && password == '1234') {
+          window.location = 'index.html';
+          return false;
+        } else if (username == '' || password == '') {
+          alert('Username dan Password tidak boleh kosong');
+          return false;
+        } else if (password.length < 6) {
+          alert('Password kurang dari 6 karakter');
+        } else {
+          alert('Username dan Password salah');
+        }
+      }
+    </script>
+  </body>
+</html>
